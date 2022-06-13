@@ -54,7 +54,7 @@
           <tbody class="table-group-divider">
             <tr>
               <th scope="row" class="table-dark">1</th>
-              <td class="table-dark">Produto 1</td>
+              <td class="table-secondary">Produto 1</td>
               <td>R$50,00</td>
               <td>50</td>
               <td>
@@ -65,7 +65,7 @@
             </tr>
             <tr>
               <th scope="row" class="table-dark">2</th>
-              <td class="table-dark">Produto 2</td>
+              <td class="table-secondary">Produto 2</td>
               <td>R$100,00</td>
               <td>150</td>
               <td>
@@ -76,7 +76,7 @@
             </tr>
             <tr>
               <th scope="row" class="table-dark">3</th>
-              <td class="table-dark">Produto 3</td>
+              <td class="table-secondary">Produto 3</td>
               <td>R$150,00</td>
               <td>300</td>
               <td>
@@ -87,9 +87,97 @@
             </tr>
           </tbody>
         </table>
-        <button type="button" class="btn btn-secondary btn-sm">
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#newProductModal"
+        >
           Cadastrar
         </button>
+      </div>
+      <div
+        class="modal fade"
+        id="newProductModal"
+        tabindex="-1"
+        aria-labelledby="newProductModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="newProductModalLabel">
+                Novo Produto
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-auto mb-3">
+                  <label for="formGroupExampleInput" class="form-label"
+                    >ID</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Código"
+                  />
+                </div>
+                <div class="col-auto b-3">
+                  <label for="formGroupExampleInput2" class="form-label"
+                    >Produto</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput2"
+                    placeholder="Nome"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-auto mb-3">
+                  <label for="formGroupExampleInput" class="form-label"
+                    >Preço</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="R$"
+                  />
+                </div>
+                <div class="col-auto mb-3">
+                  <label for="formGroupExampleInput" class="form-label"
+                    >Quantidade</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Estoque"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+              <button type="submit" class="btn btn-dark btn-sm">Salvar</button>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
     <footer class="bg-dark">

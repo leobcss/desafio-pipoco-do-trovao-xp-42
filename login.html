@@ -11,59 +11,69 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-center align-items-center">
-          <form
-            role="form"
-            class="w-75 d-flex flex-column align-items-center border border-success border-opacity-50 rounded-4 p-4 shadow bg-body"
-          >
-            <div class="form-group mb-3">
-              <label for="exampleInputEmail1"> Usuário </label>
-              <input
-                placeholder="Digite seu usuário"
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-              />
-            </div>
-            <div class="form-group mb-3">
-              <label for="exampleInputPassword1"> Senha </label>
-              <input
-                placeholder="Digite sua senha"
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div
-              class="checkbox w-100 d-flex flex-wrap align-items-center justify-content-around"
-            >
-              <label class="mb-2">
-                <input type="checkbox" /> Lembrar senha
-              </label>
-              <div id="liveAlertPlaceholder"></div>
-              <button
-                type="button"
-                class="btn btn-success ms-2 mb-2"
-                id="liveAlertBtn"
-              >
-                Entrar
-              </button>
-              <button type="submit" class="btn btn-secondary ms-2 mb-2">
-                Resetar
-              </button>
-            </div>
-          </form>
+  <body class="">
+    <header class="bg-dark">
+      <h1 class="m-0 px-3">
+        <a class="text-decoration-none text-light fs-4 lh-lg" href="#"
+          >PIPOCO DO TROVÃO</a
+        >
+      </h1>
+    </header>
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <form
+        role="form"
+        class="d-flex flex-column align-items-center border border-dark border-opacity-50 rounded-4 p-4 shadow"
+      >
+        <div class="form-group mb-3">
+          <label for="exampleInputEmail1"> Usuário </label>
+          <input
+            placeholder="Digite seu usuário"
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+          />
         </div>
-      </div>
+        <div class="form-group mb-3">
+          <label for="exampleInputPassword1"> Senha </label>
+          <input
+            placeholder="Digite sua senha"
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="checkbox w-75">
+          <label class="mb-2 w-100">
+            <input type="checkbox" /> Lembrar senha
+          </label>
+          <button type="button" class="btn btn-dark btn-sm mb-2" id="alertBtn">
+            <a href="index.html" class="text-reset text-decoration-none">
+              Entrar
+            </a>
+          </button>
+          <button type="reset" class="btn btn-secondary btn-sm ms-2 mb-2">
+            Resetar
+          </button>
+        </div>
+      </form>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
